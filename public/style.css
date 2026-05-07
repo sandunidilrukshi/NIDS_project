@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+    overflow: hidden;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #111827;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item:hover,
+.active {
+    background: #1f2937;
+}
+
+/* Main */
+.main-panel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    overflow: hidden;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar h1 {
+    font-size: 28px;
+}
+
+.top-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box {
+    width: 230px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Stats */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.stat-card {
+    padding: 18px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stat-card h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.red {
+    background: #dc2626;
+}
+
+.yellow {
+    background: #f59e0b;
+}
+
+.blue {
+    background: #2563eb;
+}
+
+.green {
+    background: #16a34a;
+}
+
+/* Content Grid */
+.content-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+    overflow: hidden;
+}
+
+.panel {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.panel-header {
+    margin-bottom: 15px;
+}
+
+/* Chart */
+.chart-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-panel canvas {
+    max-height: 320px;
+}
+
+/* Alerts */
+.alerts-container {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.alert-item {
+    background: #fee2e2;
+    border-left: 5px solid red;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .panel {
+    background: #1f1f1f;
+    color: white;
+}
+
+.dark-mode .search-box {
+    background: #333;
+    color: white;
+    border: none;
+}
+
+
